@@ -1,0 +1,31 @@
+{
+  "egfVersion": "1.1",
+  "meta": {
+    "title": "My First Game",
+    "language": "en",
+    "description": "A simple EGF game"
+  },
+  "startScene": "start",
+  "scenes": {
+    "start": {
+      "type": "question",
+      "text": "What color is the sky?",
+      "choices": [
+        {
+          "text": "Blue",
+          "feedback": "Correct! 🌤️",
+          "nextScene": "end"
+        },
+        {
+          "text": "Green",
+          "feedback": "Not quite. Try again.",
+          "nextScene": "start"
+        }
+      ]
+    },
+    "end": {
+      "type": "end",
+      "text": "🎉 You finished the game!"
+    }
+  }
+}
