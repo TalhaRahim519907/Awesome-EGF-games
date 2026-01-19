@@ -1,0 +1,31 @@
+{
+  "egfVersion": "1.1",
+  "meta": {
+    "title": "Prévention du paludisme",
+    "language": "fr",
+    "description": "Comment éviter le paludisme"
+  },
+  "startScene": "q1",
+  "scenes": {
+    "q1": {
+      "type": "question",
+      "text": "Comment se protéger contre le paludisme ?",
+      "choices": [
+        {
+          "text": "Dormir sous une moustiquaire",
+          "feedback": "Bravo ! C’est la meilleure solution 🦟",
+          "nextScene": "end"
+        },
+        {
+          "text": "Regarder la télévision",
+          "feedback": "Non, ça ne protège pas.",
+          "nextScene": "q1"
+        }
+      ]
+    },
+    "end": {
+      "type": "end",
+      "text": "Super ! Tu sais maintenant comment éviter le paludisme 🌟"
+    }
+  }
+}
